@@ -15,3 +15,7 @@ $(call inherit-product, vendor/vndk/vndk.mk)
 $(call inherit-product, vendor/hardware_overlay/overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+	ro.build.version.sdk=27
+
