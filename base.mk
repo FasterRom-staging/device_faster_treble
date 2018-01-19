@@ -11,7 +11,7 @@ PRODUCT_COPY_FILES += \
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/faster/treble/sepolicy
 DEVICE_PACKAGE_OVERLAYS += device/faster/treble/overlay
 
-$(call inherit-product, vendor/vndk/vndk.mk)
+# $(call inherit-product, vendor/vndk/vndk.mk)
 $(call inherit-product, vendor/hardware/overlay/overlay.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
